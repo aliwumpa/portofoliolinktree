@@ -1,0 +1,21 @@
+.linktree__credits {
+    &--outer-container {
+        img {
+            width: 100%;
+            object-fit: contain;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            color: $linktree-white;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 50px;
+        }
+
+        > div {
+            text-align: center;
+        }
+    }
+}

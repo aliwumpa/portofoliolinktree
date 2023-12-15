@@ -21,6 +21,7 @@ body {
         font-size: 42px;
         font-style: italic;
         color: $linktree-white;
+        display: table;
     }
 
     h2 {
@@ -72,4 +73,5 @@ body {
     @import './components/linktreeIntroductions.scss';
     @import './components/linktreeButtons.scss';
     @import './components/linktreeContacts.scss';
+    @import './components/linktreeCredits.scss';
 }

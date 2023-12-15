@@ -5,7 +5,7 @@
         type="button"
         :name="'Go to ' + backTextButton"
         :aria-label="'Go to ' + backTextButton"
-        :class="{'linktree__btn--container-back':true, 'linktree__btn--container-back-index': activePage === 3}"
+        :class="{'linktree__btn--container-back':true, 'linktree__btn--container-back-index': activePage === 4}"
         v-show="activePage !== 1"
         @click="backFlipPage()"
       >
@@ -16,7 +16,7 @@
       :name="'Go to ' + goTextButton"
       :aria-label="'Go to ' + goTextButton"
       class="linktree__btn--container-go"
-      v-show="activePage !== 3"
+      v-show="activePage !== 4"
       @click="goFlipPage()"
       >
         Go to {{ goTextButton }}
@@ -49,6 +49,24 @@
       <h1>Contacts</h1>
       <link-tree-contacts :contactsData="contactsData"></link-tree-contacts>
     </section>
+    <section 
+      id="section__credits" 
+      :class="{'active__4' : activePage === 4}"
+      v-show="activePage === 4"
+    >
+      <!-- Contact -->
+      <h1>Credits</h1>
+      <div class="linktree__credits--outer-container">
+        <img src="./assets/shigure-ui-dance.gif" width="500" height="400" alt="shigure ui"/>
+        <p>&copy; Copyright &nbsp;{{ currentYear }}, all codes of this portofolio website is belong to aliwumpa@github.io</p>
+        <div>
+          <audio controls loop volume="0.5">
+            <source src="./assets/9mm.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio> 
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -66,6 +84,7 @@
     data() {
       return {
         activePage: 1,
+        currentYear: null,
         buttonsData: [
           {
             key: 1,
@@ -144,6 +163,9 @@
         ]
       }
     },
+    mounted() {
+      this.getYear();
+    },
     computed: {
       goTextButton() {
         switch(this.activePage) {
@@ -151,6 +173,8 @@
             return 'projects';
           case 2 :
             return 'contacts';
+          case 3 :
+            return 'credits';
           default :
             return true;
         }
@@ -161,6 +185,8 @@
             return 'introduction';
           case 3 :
             return 'projects';
+          case 4 :
+            return 'contacts';
           default :
             return true;
         }
@@ -172,6 +198,10 @@
       },
       backFlipPage() {
         this.activePage -= 1;
+      },
+      getYear() {
+        const getfullYear = new Date().getFullYear();
+        this.currentYear = getfullYear;
       }
     }
   }
