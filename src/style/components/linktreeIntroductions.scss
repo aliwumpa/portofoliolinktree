@@ -16,6 +16,11 @@
         padding-left: 20px;
         text-align: center;
 
+        h1 {
+            display: block;
+            text-align: center;
+        }
+
         @include lg {
             width: 100%;
             padding-left: 0;

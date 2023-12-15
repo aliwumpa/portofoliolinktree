@@ -104,33 +104,33 @@
             desc: 'Notes of learning progress React JS',
             href: 'https://aliwumpa.github.io/portfolioreact/'            
           },
-          {
-            key: 3,
-            cardClass: 'linktree__btn--card--pink',
-            btnClass: 'linktree__btn--pink',
-            animated: 'animate__animated', 
-            text: 'Asian Civilisations Museum - National Heritage Board',
-            desc: 'Slicing project for Asian Civilisations Museum with Pug,SCSS, and jQuery',
-            href: 'https://www.nhb.gov.sg/acm/' 
-          },
-          {
-            key: 4,
-            cardClass: 'linktree__btn--card--orange',
-            btnClass: 'linktree__btn--orange',
-            animated: 'animate__animated', 
-            text: 'Founders Memorial - Find My Value',
-            desc: 'Slicing project for Founders Memorial page Find My Value with Pug,SCSS, and jQuery',
-            href: 'https://www.foundersmemorial.gov.sg/findmyvalue' 
-          },
-          {
-            key: 5,
-            cardClass: 'linktree__btn--card--yellow',
-            btnClass: 'linktree__btn--yellow',
-            animated: 'animate__animated', 
-            text: 'PSD Challenge - Podcast',
-            desc: 'Slicing project for PSD Challenge with Pug,SCSS, and jQuery',
-            href: 'https://psdchallenge.psd.gov.sg/podcast' 
-          }
+          // {
+          //   key: 3,
+          //   cardClass: 'linktree__btn--card--pink',
+          //   btnClass: 'linktree__btn--pink',
+          //   animated: 'animate__animated', 
+          //   text: 'Asian Civilisations Museum - National Heritage Board',
+          //   desc: 'Slicing project for Asian Civilisations Museum with Pug,SCSS, and jQuery',
+          //   href: 'https://www.nhb.gov.sg/acm/' 
+          // },
+          // {
+          //   key: 4,
+          //   cardClass: 'linktree__btn--card--orange',
+          //   btnClass: 'linktree__btn--orange',
+          //   animated: 'animate__animated', 
+          //   text: 'Founders Memorial - Find My Value',
+          //   desc: 'Slicing project for Founders Memorial page Find My Value with Pug,SCSS, and jQuery',
+          //   href: 'https://www.foundersmemorial.gov.sg/findmyvalue' 
+          // },
+          // {
+          //   key: 5,
+          //   cardClass: 'linktree__btn--card--yellow',
+          //   btnClass: 'linktree__btn--yellow',
+          //   animated: 'animate__animated', 
+          //   text: 'PSD Challenge - Podcast',
+          //   desc: 'Slicing project for PSD Challenge with Pug,SCSS, and jQuery',
+          //   href: 'https://psdchallenge.psd.gov.sg/podcast' 
+          // }
         
           // 'linktree__btn--olive',
           // 'linktree__btn--green'
