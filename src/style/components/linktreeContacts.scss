@@ -1,0 +1,78 @@
+.linktree__contacts {
+    &--outer-container {
+        position: absolute;
+        top: 40%;
+        transform: translate(-50%, 50%);
+        left: 50%;
+        display: grid;
+        grid-template-areas: 
+            "linkedin  github twitter facebook" 
+            "download download download download";
+        column-gap: 20px;
+        row-gap: 20px;
+
+        .linktree__contacts--wrapper:nth-of-type(1) {
+            grid-area: linkedin;
+        }
+
+        .linktree__contacts--wrapper:nth-of-type(2) {
+            grid-area: github;
+        }
+
+        .linktree__contacts--wrapper:nth-of-type(3) {
+            grid-area: twitter;
+        }
+
+        .linktree__contacts--wrapper:nth-of-type(4) {
+            grid-area: facebook;
+        }
+
+        @include lg {
+            display: block;
+            column-gap: normal;
+            row-gap: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            .linktree__contacts--wrapper:nth-of-type(1),
+            .linktree__contacts--wrapper:nth-of-type(2),
+            .linktree__contacts--wrapper:nth-of-type(3),
+            .linktree__contacts--wrapper:nth-of-type(4) {
+                grid-area: auto;
+                margin-bottom: 30px;
+            }
+        }
+        
+        @include md {
+            width: 100%;
+        }
+        
+    }
+
+    &--btn {
+        font-size: 32px;
+        width: 100%;
+    }
+}
+
+#linktree__contacts--download-PDF {
+    width: 100%;
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+    grid-area: download;
+    font-size: 16px;
+
+    @include lg {
+        grid-area: auto;
+    }
+
+    span:nth-of-type(1) {
+        margin-right: 20px;
+    }
+
+    span:nth-of-type(2) {
+        font-weight: 500;
+    }
+}

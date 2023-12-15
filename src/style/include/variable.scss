@@ -1,0 +1,29 @@
+// Screen variables
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 360px;
+
+// Colors
+$linktree-bg : #17181c;
+$linktree-white: #ffffff;
+$linktree-radial-stroke : #ffe6e6;
+
+// RGB theme
+$purple: #a972cb;
+$magenta: #ef6eae; 
+$pink: #ff7f82; 
+$orange: #ffa260; 
+$yellow: #e4cb58;
+$olive: #8fc866; 
+$green: #19bc8b;
+
+// Loop variable
+$colors: (
+  --purple: #a972cb,
+  --magenta: #ef6eae, 
+  --pink: #ff7f82, 
+  --orange: #ffa260, 
+  --yellow: #e4cb58, 
+  --olive: #8fc866, 
+  --green: #19bc8b
+);

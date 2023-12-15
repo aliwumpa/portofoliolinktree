@@ -1,0 +1,75 @@
+@import './include/fonts.scss';
+@import './include/variable.scss';
+@import './include/responsive.scss';
+
+#app {
+    padding: 2rem;
+  }
+
+body {
+    background-color: $linktree-bg;
+    font-family: 'Fira Sans', sans-serif;
+    min-height: 100dvh;
+
+    .linktree__bg {
+        position: relative;
+    }
+
+
+    h1 {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 42px;
+        font-style: italic;
+        color: $linktree-white;
+    }
+
+    h2 {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 24px;
+        font-style: italic;
+        color: $linktree-white;
+    }
+
+    p {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 16px;
+        color: $linktree-white;
+    }
+
+    button {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        padding: 0.6em 1.2em;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: inherit;
+        background-color: $linktree-white;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 0.5em 0.5em -0.3em $linktree-white;
+        }
+
+        @include lg {
+            display: block;
+        }
+    }
+    
+    ol,ul {
+        list-style: none;
+        padding-inline-start: 0;
+
+        li {
+            color: $linktree-white;
+        }
+    }
+
+    #section__contacts.active__3 {
+        position: relative;
+        height: 800px;
+    }
+
+    @import './components/linktreeIntroductions.scss';
+    @import './components/linktreeButtons.scss';
+    @import './components/linktreeContacts.scss';
+}

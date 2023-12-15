@@ -1,0 +1,233 @@
+.linktree__btn {
+    @each $button, $color in $colors {
+        &#{$button} {
+            border: 2px solid #{$color};
+            color: #{$color};
+
+            &:hover,
+            &:focus,
+            &:active,
+            &:visited {
+                box-shadow: 0 0.5em 0.5em -0.3em #{$color};
+                color: $linktree-white;
+            }
+        }
+    }
+
+    &--outer-container {
+
+        &:nth-of-type(2) {
+            .linktree__btn--card {   
+                animation-name: fadeInRight;
+                animation-delay: 1s;
+            }
+        }
+
+        &:nth-of-type(3) {
+            .linktree__btn--card {   
+                animation-name: fadeInLeft;
+                animation-delay: 1.5s;
+            }
+        }
+
+        &:nth-of-type(4) {
+            .linktree__btn--card {   
+                animation-name: fadeInRight;
+                animation-delay: 2s;
+            }
+        }
+
+        &:nth-of-type(5) {
+            .linktree__btn--card {   
+                animation-name: fadeInLeft;
+                animation-delay: 2.5s;
+            }
+        }
+
+        &:not(:nth-of-type(1)):nth-child(even) {
+            .linktree__btn--card {                    
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: calc(100% + 105px);
+                    top: -50px;
+                    right: -50px;
+                    background-color: $linktree-white;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 110px;
+                    height: 3px;
+                    right: -47px;
+                    bottom: -55px;
+                    background-color: $linktree-white;
+                } 
+            }         
+        }
+
+        &:nth-of-type(1) {
+            .linktree__btn--card {
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: calc(100% + 55px);
+                    top: 0;
+                    right: -50px;
+                    background-color: $linktree-white;
+                }
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 111px;
+                    height: 3px;
+                    right: -47px;
+                    bottom: -55px;
+                    background-color: $linktree-white;
+                } 
+            }
+        }
+
+        &:last-child {
+            .linktree__btn--card {
+                &::after {
+                    height: calc(100% + 65px) !important;
+                }
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+
+        &:not(:nth-of-type(1)):nth-child(odd) {
+            .linktree__btn--card { 
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 3px;
+                    height: calc(100% + 105px);
+                    top: -50px;
+                    left: -50px;
+                    background-color: $linktree-white;
+                }
+                
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 111px;
+                    height: 3px;
+                    left: -47px;
+                    bottom: -55px;
+                    background-color: $linktree-white;
+                } 
+            }
+        }
+
+        &:nth-child(odd) {
+            .linktree__btn--card {
+                width: calc(50% - 25px);
+                float: right;
+            }
+        }
+
+        &:nth-child(even) {
+            .linktree__btn--card {
+                width: calc(50% - 25px);
+                float: left;
+            }
+        }
+
+        @include lg {
+            &:nth-child(odd),
+            &:nth-child(even) {
+                .linktree__btn--card {
+                    width: 100%;
+                    float: none;
+    
+                    &::after,
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &--card {
+        position: relative;
+        padding: {
+            right: 15px;
+            left: 15px;
+            top: 20px;
+            bottom: 20px;
+        }
+        height: 210px;
+        border-radius: 25px;
+        margin-bottom: 100px;
+
+        @include lg {
+            padding: {
+                right: 10px;
+                left: 10px;
+            }
+            height: 100%;
+            margin-bottom: 30px;
+        }
+
+
+        @each $card, $color in $colors {
+            &#{$card} {
+                border: 2px solid #{$color};
+            }
+        }
+    }
+
+    &--general {
+        background-color: $linktree-bg;
+        font-size: 16px;
+    }
+
+    &--container {
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        display: flex;
+        justify-content: space-between;
+        float: none;
+
+        &-back {
+            margin-right: 30px;
+
+            &-index {
+                z-index: 2;
+            }
+        }
+
+        @include lg {
+            position: relative;
+            top: auto;
+            right: auto;
+            display: block;
+
+            &-back {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.active__1 {
+    &~.linktree__btn--container {
+        float: right;
+
+        @include lg {
+            float: none;
+        }
+    }
+}
