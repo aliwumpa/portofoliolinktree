@@ -10,6 +10,7 @@
                 @click="redirectToLink(element.href)"
                 type="button"
                 :aria-label="element.aria_label"
+                v-tooltip.top="element.tooltip"
             >
                 <span :class="`${element.fa}`"></span>
             </button>

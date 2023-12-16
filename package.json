@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "font-awesome": "^4.7.0",
     "jquery": "^3.7.1",
+    "primevue": "^3.44.0",
     "sass": "^1.68.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"

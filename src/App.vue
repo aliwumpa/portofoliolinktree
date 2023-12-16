@@ -60,7 +60,7 @@
         <img src="./assets/shigure-ui-dance.gif" width="500" height="400" alt="shigure ui"/>
         <p>&copy; Copyright &nbsp;{{ currentYear }}, all codes of this portofolio website is belong to aliwumpa@github.io</p>
         <div>
-          <audio controls loop volume="0.5">
+          <audio controls loop volume="0.1">
             <source src="./assets/9mm.mp3" type="audio/mp3">
             Your browser does not support the audio element.
           </audio> 
@@ -140,25 +140,29 @@
             key: 1,
             fa: 'fa fa-linkedin',
             href: 'https://www.linkedin.com/in/ali-ridho-fauzi-rahman/',
-            aria_label: 'button linkedin'
+            aria_label: 'button linkedin',
+            tooltip: 'linkedin'
           },
           {
             key: 2,
             fa: 'fa fa-github',
             href: 'https://github.com/aliwumpa',
-            aria_label: 'button github'
+            aria_label: 'button github',
+            tooltip: 'github'
           },
           {
             key: 3,
             fa: 'fa fa-twitter',
             href: 'https://twitter.com/aliwumpa',
-            aria_label: 'button twitter'
+            aria_label: 'button twitter',
+            tooltip: 'twitter'
           },
           {
             key: 4,
             fa: 'fa fa-facebook-official',
             href: 'https://www.facebook.com/ali.wumpa/',
-            aria_label: 'button facebook'
+            aria_label: 'button facebook',
+            tooltip: 'facebook'
           }
         ]
       }

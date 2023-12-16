@@ -70,6 +70,18 @@ body {
         height: 800px;
     }
 
+    .p-tooltip {
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 8px;
+        background-color: $linktree-white;
+        color: $linktree-bg;
+        border: 1px solid $linktree-bg;
+
+      }
+
     @import './components/linktreeIntroductions.scss';
     @import './components/linktreeButtons.scss';
     @import './components/linktreeContacts.scss';
