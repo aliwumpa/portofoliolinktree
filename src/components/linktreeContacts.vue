@@ -17,12 +17,12 @@
         </div>
         <button 
             id="linktree__contacts--download-PDF" 
-            @click="downloadPDF()"
+            @click="previewPDF()"
             type="button"
-            aria-label="download PDF button"
+            aria-label="preview PDF button"
         >
             <span class="fa fa-download"></span>
-            <span>Download My CV</span>
+            <span>Preview My CV</span>
         </button>
     </div>
 
@@ -36,14 +36,15 @@
             redirectToLink(link) {
                 window.open(link, '_blank');
             },
-            downloadPDF() {
-                var PDFpath = '/portofoliolinktree/CV_Update_2024_Ali.pdf';
+            previewPDF() {
+                var PDFpath = 'https://aliwumpa.github.io/portofoliolinktree/CV_Update_2024_Ali.pdf';
                 var link = document.createElement('a');
                 link.href = PDFpath;
-                link.download = 'CV_Ali_Ridho_Fauzi_Rahman.pdf';
+                // link.download = 'CV_Ali_Ridho_Fauzi_Rahman.pdf';
+                link.target = '_blank';
                 document.body.appendChild(link);
                 
-                // click the link to force download
+                // click the link to open new tab
                 link.click();
 
                 // remove the element anchor after clicking link
