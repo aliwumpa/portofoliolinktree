@@ -37,7 +37,7 @@
                 window.open(link, '_blank');
             },
             downloadPDF() {
-                var PDFpath = '/portofoliolinktree/CV_Update_Ali.pdf';
+                var PDFpath = '/portofoliolinktree/CV_Update_2024_Ali.pdf';
                 var link = document.createElement('a');
                 link.href = PDFpath;
                 link.download = 'CV_Ali_Ridho_Fauzi_Rahman.pdf';
