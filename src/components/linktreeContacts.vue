@@ -37,7 +37,7 @@
                 window.open(link, '_blank');
             },
             previewPDF() {
-                var PDFpath = 'https://aliwumpa.github.io/portofoliolinktree/CV_Update_2024_Ali.pdf';
+                var PDFpath = 'https://aliwumpa.github.io/portofoliolinktree/CV_Update_2024_2_Ali.pdf';
                 var link = document.createElement('a');
                 link.href = PDFpath;
                 // link.download = 'CV_Ali_Ridho_Fauzi_Rahman.pdf';
