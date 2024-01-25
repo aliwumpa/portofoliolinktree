@@ -93,7 +93,7 @@
             animated: 'animate__animated animate__fadeInLeft', 
             text: 'Multistep Form App',
             desc: 'A long-form broken down into multiple pieces/steps with validation for store apps',
-            href: 'https://aliwumpa.github.io/portfoliovue/'
+            href: 'https://aliwumpa.github.io/portofoliovue/'
           },
           {
             key: 2,
@@ -102,7 +102,7 @@
             animated: 'animate__animated', 
             text: 'Scribble React App',
             desc: 'Notes of learning progress React JS',
-            href: 'https://aliwumpa.github.io/portfolioreact/'            
+            href: 'https://aliwumpa.github.io/portofolioreact/'            
           },
           // {
           //   key: 3,
