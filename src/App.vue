@@ -58,7 +58,7 @@
       <h1>Credits</h1>
       <div class="linktree__credits--outer-container">
         <img src="./assets/shigure-ui-dance.gif" width="500" height="400" alt="shigure ui"/>
-        <p>&copy; Copyright &nbsp;{{ currentYear }}, all codes of this portofolio website is belong to aliwumpa@github.io</p>
+        <p>&copy; Copyright &nbsp;{{ currentYear }}, all codes in this portfolio website belong to aliwumpa@github.io</p>
         <div>
           <audio controls loop volume="0.1">
             <source src="./assets/9mm.mp3" type="audio/mp3">
@@ -104,15 +104,15 @@
             desc: 'Notes of learning progress React JS',
             href: 'https://aliwumpa.github.io/portofolioreact/'            
           },
-          // {
-          //   key: 3,
-          //   cardClass: 'linktree__btn--card--pink',
-          //   btnClass: 'linktree__btn--pink',
-          //   animated: 'animate__animated', 
-          //   text: 'Asian Civilisations Museum - National Heritage Board',
-          //   desc: 'Slicing project for Asian Civilisations Museum with Pug,SCSS, and jQuery',
-          //   href: 'https://www.nhb.gov.sg/acm/' 
-          // },
+          {
+            key: 3,
+            cardClass: 'linktree__btn--card--pink',
+            btnClass: 'linktree__btn--pink',
+            animated: 'animate__animated', 
+            text: 'Yamada Wheel of Fortune',
+            desc: 'Game of roulette with React JS',
+            href: 'https://aliwumpa.github.io/yamada_fortune/' 
+          },
           // {
           //   key: 4,
           //   cardClass: 'linktree__btn--card--orange',
